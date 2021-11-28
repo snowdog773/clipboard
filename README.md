@@ -10,3 +10,8 @@ Also I found a cool gizmo to convert hex colour values into CSS filter propertie
 links at the end of the page.
 
 https://codepen.io/sosuke/pen/Pjoqqp
+
+
+-----------------------------------------------------------------------EDIT------------------------------------------------------------------------------
+
+Now finished more or less, responding to window resizing fairly well, positioning could be improved.
