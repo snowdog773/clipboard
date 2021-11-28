@@ -1,296 +1,43 @@
-/* Font CSS
-
-font-family: 'Bai Jamjuree', sans-serif;
-
-*/
-@font-face {
-    font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Italic.ttf");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Bold.ttf");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-BoldItalic.ttf");
-    font-weight: bold;
-    font-style: italic;
-}
-
-:root {
-    --white: #fff;
-    --black: hsl(210, 10%, 33%);
-    --text: hsl(201, 11%, 66%);
-    --blue: hsl(171, 66%, 44%);
-    --darker-blue: hsl(233, 100%, 69%);
-    --footer-fill: hsla(201, 11%, 66%, 50%);
-
-}
-/* :root defines CSS variables */
-/* -- tells CSS this is a custom property I have assigned a value to  */
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 body {
     background:url("/assets/bg-header-desktop.png");
     background-repeat: no-repeat;
-    background-color: var(--white);
-    background-size: contain;
-    color: var(--text);
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-family: Baijam, Trebuchet, Helvetica;
-}
-
-header {
-    margin: 0 300px;
 }
 
 header h1 {
-    background-image:url("/assets/logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 125px;
-    height: 0;
-    overflow: hidden;
-    /* height and overflow refer to the text inside the h1 tag which needs to remain for crawlers etc
-    bu we don't actually want to see in the design. Padding top
-    allows space for the background logo to appear. */
-    margin: 131px 0 0;
-    font-size: 32px;
+    margin: 128px 0 56px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 1em 0;
-    /* font-style: italic; */
-    color: var(--black);
+header h2 {
+    font-size: 46px;
+    line-height: 57px;
+    letter-spacing: -0.75px;
+    margin: 16px 0;
 }
 
-h2 {
-    font-size: 34px;
-
+header {
+    display: block;
+    margin: 0 24%;
 }
 
-h3 {
-    font-size: 26px;
-}
-
-h4 {
-    font-size: 22px;
-}
-
-p {
-    line-height: 1.625;
+header p.header {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
     margin: 0;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--blue);
-}
-
-
-.cta-btns {
+div.cta-btns {
+    margin: 48px 0 150px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
-.cta-btns a {
-    display: block;
-    color: var(--white);
+div.cta-btns a {
+    margin: 0 8px;
     width: 227px;
-    text-align: center;
-    padding: 1em 1.5em;
-    margin: 1em 10px;
-    font-style: italic;
-    border-radius: 28px;
-    box-shadow: inset 0px -3px 0px rgba(0,0,0,0.151333);
+    height: 56px;
 }
 
-.cta-btns {
-    margin: 1.5em 0;
-}
-
-.cta-btns a:hover {
-    color: var(--white);
-    opacity: 0.8;
-}
-
-.cta-btns a.ios {
-    background: var(--blue);
-}
-
-.cta-btns a.mac {
-    background: var(--darker-blue);
-}
-
-
-ul.feature {
-    list-style: none;
-    padding: 0;
-}
-
-/* picture-wrapper contains the image and the unordered list. Does nothing in the mobile version, only used to apply
-display flex in the desktop version */
-section .picture-wrapper {
-    display: flex;
-}
-
-.keep-track img {
-    display: block;
-    margin: 60px 0 60px -30px;
-    width: 100%;
-}
-
-
-.keep-track ul.feature {
-    text-align: left;
-    margin: 60px 200px 60px 100px;
-}
-
-.clip-anywhere img {
-    width: 100%;
-    margin: 60px 0;
-
-}
-
-.supercharge-workflow ul {
-    display: flex;
-    margin: 60px 100px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.supercharge-workflow ul li {
-    width: 350px;
-    margin: 0 50px;
-}
-
-.feature .blacklist h4::before {
-    background: url("/assets/icon-blacklist.svg");
-    display: block;
-    width: 44px;
-    height: 40px;
-    margin: 40px auto 25px auto;
-    content: "";
-}
-
-
-
-.feature .snippets h4::before {
-    background: url("/assets/icon-text.svg");
-    display: block;
-    width: 36px;
-    height: 32px;
-    margin: 40px auto 35px auto;
-    content: "";
-}
-
-.feature .preview h4::before {
-    background: url("/assets/icon-preview.svg");
-    display: block;
-    width: 50px;
-    height: 32px;
-    margin: 40px auto;
-    content: "";
-}
-
-section.partners {
-    display: flex;
-    margin-top: 50px;
-}
-
-.partners div {
-    display: block;
-    margin: 59px auto;
-    width: 139px;
-}
-
-aside {
-    margin: 0 300px;
-}
-
-footer {
-    background: var(--footer-fill);
-    display: flex;
-    justify-content: space-between;
-}
-
-footer nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--black);
-    height: 55px;
-    margin-top: 15px;
-}
-
-footer nav a {
-    font-size: 12px;
-    text-align: left;
-    margin: 0 20px;
-
-}
-
-footer h2 {
-    background-image:url("/assets/logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55px;
-    padding-top: 80px;
-    padding-left: 100px;
-    height: 0;
-    overflow: hidden;
-    /* height and overflow refer to the text inside the h1 tag which needs to remain for crawlers etc
-    bu we don't actually want to see in the design. Padding top
-    allows space for the background logo to appear. */
-    margin: 0;
-    font-size: 32px;
-}
-
-
-footer address {
-    display: block;
-    margin: 30px 0 0 60px;
-    padding-bottom: 30px;
-}
-
-footer address img {
-    height: 20px;
-    padding: 0 5px;
-}
-
-footer address img:hover {
-    filter: brightness(0) saturate(100%);
-    filter: invert(65%) sepia(19%) saturate(1561%) hue-rotate(121deg) brightness(92%) contrast(81%);
+.keep-track {
+    
 }
