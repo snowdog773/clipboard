@@ -15,3 +15,5 @@ https://codepen.io/sosuke/pen/Pjoqqp
 -----------------------------------------------------------------------EDIT------------------------------------------------------------------------------
 
 Site has been pretty much rebuilt from the ground up on the latest push. Mobile site has been carefully redesigned to match the design plan as closely as possible. Desktop site has been started but there is still work to do. There is also a point on resizing (around 700px width) where the cta buttons go a bit weird so possibly needs a "tablet" CSS stage to fix that.
+
+QUESTION: I noticed in class you were setting all your font sizes in em units and converting them from the px units given in Figma's inspector. What is the advantage of using em units? and how do you calculate them? Would it be possible to spend a little time in class reviewing the use of em units? I realise they are relative to one another, but when I try and use them I end up breaking more things than I fix.
