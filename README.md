@@ -14,4 +14,4 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 -----------------------------------------------------------------------EDIT------------------------------------------------------------------------------
 
-Now finished more or less, responding to window resizing fairly well, positioning could be improved.
+Site has been pretty much rebuilt from the ground up on the latest push. Mobile site has been carefully redesigned to match the design plan as closely as possible. Desktop site has been started but there is still work to do. There is also a point on resizing (around 700px width) where the cta buttons go a bit weird so possibly needs a "tablet" CSS stage to fix that.
