@@ -1,0 +1,11 @@
+.picture-wrapper {
+    justify-content: center;
+}
+
+.picture-wrapper img {
+    margin: unset;
+}
+
+footer {
+    justify-content: space-evenly;
+}

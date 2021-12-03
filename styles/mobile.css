@@ -37,7 +37,7 @@ font-family: 'Bai Jamjuree', sans-serif;
     --text: hsl(201, 11%, 66%);
     --blue: hsl(171, 66%, 44%);
     --darker-blue: hsl(233, 100%, 69%);
-    --footer-fill: hsla(201, 11%, 66%, 50%);
+    --footer-fill: hsla(201, 11%, 66%, 10.02%);
 
 }
 /* :root defines CSS variables */

@@ -1,6 +1,11 @@
 body {
     background:url("/assets/bg-header-desktop.png");
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    margin: unset;
 }
 
 header h1 {
@@ -12,6 +17,18 @@ header h2 {
     line-height: 57px;
     letter-spacing: -0.75px;
     margin: 16px 0;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.586957px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.135px;
 }
 
 header {
@@ -36,8 +53,149 @@ div.cta-btns a {
     margin: 0 8px;
     width: 227px;
     height: 56px;
+    min-width: 215px;
 }
 
-.keep-track {
-    
+.keep-track p {
+    margin: 19px 0 80px
+}
+
+.picture-wrapper {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.picture-wrapper img {
+    width: calc(752/1440)px;
+    margin: 0 0 0 -32px;
+    min-width: 360px;
+}
+
+.picture-wrapper picture {
+    align-self: center;
+}
+
+ul.quick {
+    max-width: 350px;
+    text-align: left;
+    margin: 0 0 0 110px;
+    padding-top: 68px;
+
+}
+
+ul.quick h4 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.39px;
+    font-weight: 600;
+}
+
+ul.quick p {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.12px;
+    margin-bottom: 56px;
+}
+
+.clip-anywhere h3 {
+    margin-bottom: 19px;
+}
+
+.clip-anywhere img {
+    margin: 110px auto 161px;
+    max-width: 712px;
+}
+
+.supercharge-workflow h3 {
+    margin-bottom: 19px;
+}
+
+.supercharge-workflow .feature {
+    margin: 72px auto 150px;
+    display: flex;
+    max-width: 1110px;
+}
+
+.supercharge-workflow .feature li {
+    max-width: 350px;
+    margin: 0 15px;
+}
+
+.feature .blacklist h4::before {
+    margin: 0 auto 34px;
+}
+
+.feature .snippets h4::before {
+    margin: 0 auto 44px;
+}
+
+.feature .preview h4::before {
+    margin: 0 auto 44px;
+}
+
+.supercharge-workflow .feature p {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.12px;
+}
+
+section.partners {
+    display: flex;
+    margin: 0 auto 150px;
+    flex-wrap: wrap;
+    max-width: 1110px;
+}
+
+section.partners div {
+    padding: 0 20px;
+}
+
+aside h2 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.59px;
+}
+
+aside p {
+    max-width: 730px;
+    display: block;
+    margin: 19px auto 48px;
+}
+
+footer {
+    display:flex;
+    flex-wrap: wrap;
+    min-height: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h2 {
+   margin: 0;
+   padding-top: 150px;
+}
+
+footer address {
+    display: flex;
+}
+
+footer address img {
+    margin: 0 12px;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px 30px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav a {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 160px;
 }
