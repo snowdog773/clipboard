@@ -5,28 +5,28 @@ font-family: 'Bai Jamjuree', sans-serif;
 */
 @font-face {
     font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Regular.ttf");
+    src: url("fonts/BaiJamjuree-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Italic.ttf");
+    src: url("fonts/BaiJamjuree-Italic.ttf");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-Bold.ttf");
+    src: url("fonts/BaiJamjuree-Bold.ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Baijam";
-    src: url("/fonts/BaiJamjuree-BoldItalic.ttf");
+    src: url("fonts/BaiJamjuree-BoldItalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
@@ -53,7 +53,7 @@ html {
 }
 
 body {
-    background:url("/assets/bg-header-mobile.png");
+    background:url("assets/bg-header-mobile.png");
     background-repeat: no-repeat;
     background-color: var(--white);
     background-size: contain;
@@ -69,7 +69,7 @@ main, aside {
 }
 
 header h1 {
-    background-image:url("/assets/logo.svg");
+    background-image:url("assets/logo.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -219,7 +219,7 @@ section.clip-anywhere {
 }
 
 .feature .blacklist h4::before {
-    background: url("/assets/icon-blacklist.svg");
+    background: url("assets/icon-blacklist.svg");
     display: block;
     width: 44px;
     height: 40px;
@@ -230,7 +230,7 @@ section.clip-anywhere {
 
 
 .feature .snippets h4::before {
-    background: url("/assets/icon-text.svg");
+    background: url("assets/icon-text.svg");
     display: block;
     width: 36px;
     height: 32px;
@@ -239,7 +239,7 @@ section.clip-anywhere {
 }
 
 .feature .preview h4::before {
-    background: url("/assets/icon-preview.svg");
+    background: url("assets/icon-preview.svg");
     display: block;
     width: 50px;
     height: 32px;
@@ -270,7 +270,7 @@ footer {
 }
 
 footer h2 {
-    background-image:url("/assets/logo.svg");
+    background-image:url("assets/logo.svg");
     background-repeat: no-repeat;
     background-position: 50% 52px;
     background-size: 55px;
